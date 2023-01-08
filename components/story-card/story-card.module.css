@@ -49,7 +49,3 @@
     object-fit: cover;
     filter: brightness(80%);
 }
-
-.storyPreview:hover {
-    filter: brightness(125%)
-}

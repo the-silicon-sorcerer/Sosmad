@@ -1,7 +1,7 @@
 /* STORIES STYLES */
 
 .stories {
-    padding: var(--edgePadding);
+    padding: var(--edgeSpacing);
     padding-right: 0px;
 }
 

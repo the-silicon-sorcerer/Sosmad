@@ -7,7 +7,7 @@
 }
 
 :root {
-  --edgePadding: 0px 20px;
+  --edgeSpacing: 0px 20px;
   --primary: #aaaaaa;
   --secondary: #2b2d2e;
   --accentColor: #3f8dfd;

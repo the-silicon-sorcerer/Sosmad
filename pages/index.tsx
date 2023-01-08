@@ -1,11 +1,23 @@
 import Head from 'next/head'
+import React, { useState } from 'react'
 
 import styles from '../page-styles/Home.module.css'
 import StorySlider from '../components/stories-slider/stories-slider.component'
 import Header from '../components/header/header.component'
+import BinarySelector from '../components/binary-select/binary.select.compoent'
 import { sampleData } from '../utils/sampleData'
 
+
 export default function Home() {
+  const [selectActive, setSelect] = useState(false)
+
+  const selectorOnClick = (option: string) => {
+    if (option === 'Explore') {
+      return setSelect(false)
+    }
+    setSelect(true)
+  }
+
   return (
     <>
       <Head>
@@ -16,7 +28,15 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <Header />
-        <StorySlider userDataArray={sampleData} />
+        <StorySlider
+          userDataArray={sampleData}
+        />
+        <BinarySelector
+          optionOne='Explore'
+          optionTwo='Discover'
+          onClickHandle={selectorOnClick}
+          stateValue={selectActive}
+        />
       </div>
     </>
   )
