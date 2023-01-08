@@ -11,7 +11,8 @@
   --primary: #aaaaaa;
   --secondary: #2b2d2e;
   --accentColor: #3f8dfd;
-  --backgroundColor: #1b1a1d
+  --backgroundColor: #1b1a1d;
+  --borderRadius: 10px
 }
 
 body {
@@ -33,4 +34,9 @@ h1 {
 h2 {
   font-weight: 300;
   font-size: 1.4rem;
+}
+
+h3 {
+  font-weight: 200;
+  font-size: 1rem;
 }

@@ -33,33 +33,7 @@ export default function Home() {
                 src='/images/female-1-story.jpg'
                 alt='' className={styles.storyImage} />
               <div className={styles.storyTitle}>
-                <div className={styles.storyProfile}>
-                </div>
-              </div>
-            </div>
-            <div className={styles.storyPreview}>
-              <Image fill
-                src='/images/female-1-story.jpg'
-                alt='' className={styles.storyImage} />
-              <div className={styles.storyTitle}>
-                <div className={styles.storyProfile}>
-                </div>
-              </div>
-            </div>
-            <div className={styles.storyPreview}>
-              <Image fill
-                src='/images/female-1-story.jpg'
-                alt='' className={styles.storyImage} />
-              <div className={styles.storyTitle}>
-                <div className={styles.storyProfile}>
-                </div>
-              </div>
-            </div>
-            <div className={styles.storyPreview}>
-              <Image fill
-                src='/images/female-1-story.jpg'
-                alt='' className={styles.storyImage} />
-              <div className={styles.storyTitle}>
+                <h3>Michael_kana</h3>
                 <div className={styles.storyProfile}>
                 </div>
               </div>
