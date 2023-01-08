@@ -9,3 +9,7 @@
     display: flex;
     overflow-x: scroll;
 }
+
+.storiesContainer::-webkit-scrollbar {
+    display: none;
+}
