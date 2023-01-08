@@ -8,6 +8,7 @@
     border-radius: var(--borderRadius);
     display: flex;
     overflow-x: scroll;
+    padding-right: 0px;
 }
 
 .storiesContainer::-webkit-scrollbar {
