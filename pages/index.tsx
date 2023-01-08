@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
 import styles from '../page-styles/Home.module.css'
-import NotifactionsIcon from '../public/svg/notifactions-icon.svg'
-import MessagesIcon from '../public/svg/messages-icon.svg'
-import { userData } from '../utils/sampleData'
+import StorySlider from '../components/stories-slider/stories-slider.component'
+import Header from '../components/header/header.component'
+import { sampleData } from '../utils/sampleData'
 
 export default function Home() {
   return (
@@ -16,30 +15,8 @@ export default function Home() {
         <title>Sosmad</title>
       </Head>
       <div className={styles.main}>
-        <div className={styles.header}>
-          <h1>Sosmad</h1>
-          <button>
-            <NotifactionsIcon />
-          </button>
-          <button>
-            <MessagesIcon />
-          </button>
-        </div>
-        <div className={styles.stories}>
-          <h2>Stories</h2>
-          <div className={styles.storiesContainer}>
-            <div className={styles.storyPreview}>
-              <Image fill
-                src='/images/female-1-story.jpg'
-                alt='' className={styles.storyImage} />
-              <div className={styles.storyTitle}>
-                <h3>Michael_kana</h3>
-                <div className={styles.storyProfile}>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Header />
+        <StorySlider userDataArray={sampleData} />
       </div>
     </>
   )

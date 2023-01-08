@@ -1,0 +1,11 @@
+/* STORIES STYLES */
+
+.stories>h2 {
+    margin-bottom: 10px;
+}
+
+.storiesContainer {
+    border-radius: var(--borderRadius);
+    display: flex;
+    overflow-x: scroll;
+}

@@ -1,11 +1,27 @@
-export interface userData {
+export interface UserData {
     username: string
     profilePic: string
+    currentStories: StoryData[]
 }
 
-export const userData: userData[] = [
+export interface StoryData {
+    storyImage: string
+}
+
+export const sampleData: UserData[] = [
     {
-        username: "Marissa Banks",
-        profilePic: "/images/female-1-profile"
+        username: "Kevin Parks",
+        profilePic: "https://images.unsplash.com/photo-1513910367299-bce8d8a0ebf6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
+        currentStories: [{ storyImage: 'https://images.unsplash.com/photo-1524959725226-f4deb958e979?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80' }]
+    },
+    {
+        username: "Kevin Parks",
+        profilePic: "https://images.unsplash.com/photo-1513910367299-bce8d8a0ebf6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
+        currentStories: [{ storyImage: 'https://images.unsplash.com/photo-1524959725226-f4deb958e979?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80' }]
+    },
+    {
+        username: "Kevin Parks",
+        profilePic: "https://images.unsplash.com/photo-1513910367299-bce8d8a0ebf6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
+        currentStories: [{ storyImage: 'https://images.unsplash.com/photo-1524959725226-f4deb958e979?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80' }]
     }
 ]

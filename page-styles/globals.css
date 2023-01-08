@@ -12,7 +12,8 @@
   --secondary: #2b2d2e;
   --accentColor: #3f8dfd;
   --backgroundColor: #1b1a1d;
-  --borderRadius: 10px
+  --borderRadius: 10px;
+  --marginBottom: 25px
 }
 
 body {

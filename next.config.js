@@ -12,7 +12,17 @@ const nextConfig = {
     fontLoaders: [
       { loader: '@next/font/google', options: { subsets: ['latin'] } }
     ]
-  }
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '*/**',
+      },
+    ],
+  },
 }
 
 module.exports = nextConfig
