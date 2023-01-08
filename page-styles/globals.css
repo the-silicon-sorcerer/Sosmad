@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --edgePadding: 0px 20px;
+  --primary: #aaaaaa;
+  --secondary: #2b2d2e;
+  --accentColor: #3f8dfd;
+  --backgroundColor: #1b1a1d
+}
+
+body {
+  background-color: var(--backgroundColor);
+}
+
+h1,
+h2,
+h3,
+p {
+  color: white;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 1.4rem;
+}

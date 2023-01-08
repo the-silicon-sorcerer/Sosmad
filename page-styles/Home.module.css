@@ -1,0 +1,60 @@
+.main {
+  margin-top: 25px;
+  padding: var(--edgePadding);
+}
+
+/* HEADER STYLES */
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header>h1 {
+  margin-right: auto;
+}
+
+.header>button {
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--secondary);
+}
+
+.header button:nth-child(2) {
+  margin: 0px 10px;
+}
+
+.header>button>* {
+  scale: .4;
+  transform: translate(-12%, -15%);
+  fill: var(--primary);
+}
+
+/* STORIES STYLES */
+
+.stories>h2 {
+  margin-bottom: 10px;
+}
+
+.storiesContainer {
+  border-radius: 10px;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.storyPreview {
+  position: relative;
+  height: 170px;
+  min-width: 125px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.storyImage {
+  opacity: 90%;
+}
