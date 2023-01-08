@@ -13,7 +13,7 @@ const StorySlider = ({ userDataArray }: StorySliderProps) => {
             <h2>Stories</h2>
             <div className={styles.storiesContainer}>
                 {userDataArray.map((data) => {
-                    return <StoryCard userData={data} />
+                    return <StoryCard key={data.id} userData={data} />
                 })}
             </div>
         </div>
