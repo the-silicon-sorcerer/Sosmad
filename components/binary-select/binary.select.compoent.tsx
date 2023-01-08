@@ -13,7 +13,9 @@ const BinarySelector = ({ optionOne, optionTwo, onClickHandle, stateValue }: Bin
         <div className={styles.toggleContainer}>
             <h2 onClick={() => onClickHandle(optionOne)}>{optionOne}</h2>
             <h2 onClick={() => onClickHandle(optionTwo)}>{optionTwo}</h2>
-            <div className={`${styles.selector} ${stateValue ? styles.active : ''}`}>
+            <div className={`${styles.selectorContainer} ${stateValue ? styles.active : ''}`}>
+                <div className={styles.selector}>
+                </div>
             </div>
         </div>
     )

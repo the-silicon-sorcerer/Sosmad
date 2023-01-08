@@ -12,6 +12,20 @@
     z-index: 1;
 }
 
+.selectorContainer {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    transition: all .2s;
+}
+
+.active {
+    justify-content: flex-end;
+}
+
 .selector {
     background-color: var(--accentColor);
     border-radius: 50px;
@@ -19,12 +33,4 @@
     height: 100%;
     position: absolute;
     top: 0%;
-    right: 100%;
-    transform: translate(100%, 0%);
-    transition: all .2s;
-}
-
-.active {
-    right: 0%;
-    transform: translate(0%, 0%);
 }
