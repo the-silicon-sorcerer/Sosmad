@@ -4,27 +4,13 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: var(--edgeSpacing);
+    padding: var(--edgeSpacing);
 }
 
 .header>h1 {
     margin-right: auto;
 }
 
-.header>button {
-    height: 45px;
-    width: 45px;
-    border-radius: 50px;
-    border: none;
-    background-color: var(--secondary);
-}
-
 .header button:nth-child(2) {
     margin: 0px 10px;
-}
-
-.header>button>* {
-    scale: .4;
-    transform: translate(-12%, -15%);
-    fill: var(--primary);
 }

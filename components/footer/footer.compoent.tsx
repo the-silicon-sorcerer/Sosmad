@@ -1,22 +1,15 @@
 import IconButton from '../icon-button/icon-button.component';
 import styles from './footer.module.css'
 import PlusIcon from '../../public/svg/plus.svg'
-import { transferableAbortController } from 'util';
+import HomeIcon from '../../public/svg/home-icon.svg'
+import ProfileIcon from '../../public/svg/profile.svg'
 
 const Footer = () => {
     return (
         <div className={styles.main}>
-            <IconButton SvgIcon={PlusIcon}
-                style={{
-                    backgroundColor: 'var(--accentColor)',
-                    height: '75px',
-                    width: '75px',
-                    position: 'absolute',
-                    top: '0px',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)'
-
-                }} />
+            <IconButton SvgIcon={PlusIcon} classname={styles.plusIcon} svgFill='white' />
+            <IconButton SvgIcon={HomeIcon} classname={styles.secondaryIcon} svgFill='white' />
+            <IconButton SvgIcon={ProfileIcon} classname={styles.secondaryIcon} svgFill='white' />
         </div>
     )
 }

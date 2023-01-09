@@ -7,4 +7,25 @@
     bottom: 0%;
     border-radius: var(--borderRadius);
     transform: translate(0%, 50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plusIcon {
+    background-color: var(--accentColor);
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.secondaryIcon {
+    width: 50px;
+    height: 50px;
+    background-Color: var(--current);
+    transform: translate(0%, -65%);
+    margin: 0px 40px
 }

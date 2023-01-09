@@ -3,13 +3,14 @@ import styles from './icon-button.module.css'
 
 interface IconButtonProps {
     SvgIcon: any
-    style?: React.CSSProperties
+    classname?: string
+    svgFill?: string
 }
 
-const IconButton = ({ SvgIcon, style }: IconButtonProps) => {
+const IconButton = ({ SvgIcon, classname, svgFill }: IconButtonProps) => {
     return (
-        <button style={style} className={styles.button}>
-            <SvgIcon />
+        <button className={`${styles.button} ${classname}`}>
+            <SvgIcon style={{ fill: svgFill }} />
         </button>
     )
 }
