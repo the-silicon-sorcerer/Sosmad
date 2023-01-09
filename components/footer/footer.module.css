@@ -1,7 +1,9 @@
 .main {
     background-color: var(--secondary);
-    height: 10vh;
+    height: 20vh;
     width: 100vw;
     position: fixed;
     bottom: 0%;
+    border-radius: var(--borderRadius);
+    transform: translate(0%, 50%);
 }

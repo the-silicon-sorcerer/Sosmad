@@ -1,12 +1,14 @@
+import React from 'react'
 import styles from './icon-button.module.css'
 
 interface IconButtonProps {
     SvgIcon: any
+    style?: React.CSSProperties
 }
 
-const IconButton = ({ SvgIcon }: IconButtonProps) => {
+const IconButton = ({ SvgIcon, style }: IconButtonProps) => {
     return (
-        <button className={styles.button}>
+        <button style={style} className={styles.button}>
             <SvgIcon />
         </button>
     )

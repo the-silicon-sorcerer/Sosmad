@@ -1,8 +1,10 @@
+import IconButton from '../icon-button/icon-button.component';
 import styles from './footer.module.css'
 
 const Footer = () => {
     return (
-        <div className={styles.main}></div>
+        <div className={styles.main}>
+        </div>
     )
 }
 
