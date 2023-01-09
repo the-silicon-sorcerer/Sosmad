@@ -5,8 +5,8 @@ import styles from '../page-styles/Home.module.css'
 import StorySlider from '../components/stories-slider/stories-slider.component'
 import Header from '../components/header/header.component'
 import BinarySelector from '../components/binary-select/binary.select.compoent'
-import { sampleData } from '../utils/sampleData'
 
+import { sampleData } from '../utils/sampleData'
 
 export default function Home() {
   const [selectActive, setSelect] = useState(false)

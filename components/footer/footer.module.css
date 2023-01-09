@@ -1,0 +1,7 @@
+.main {
+    background-color: var(--secondary);
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 0%;
+}

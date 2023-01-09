@@ -1,0 +1,11 @@
+.button {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--secondary);
+}
+
+.button>* {
+    fill: var(--primary);
+}

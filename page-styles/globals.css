@@ -14,7 +14,9 @@
   --accentColor: #3f8dfd;
   --backgroundColor: #1b1a1d;
   --borderRadius: 10px;
-  --marginBottom: 25px
+  --marginBottom: 25px;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 body {
