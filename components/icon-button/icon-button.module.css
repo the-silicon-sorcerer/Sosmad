@@ -6,6 +6,8 @@
     background-color: var(--secondary);
 }
 
-.button>* {
+.header>button>* {
+    scale: .4;
+    transform: translate(-12%, -15%);
     fill: var(--primary);
 }
