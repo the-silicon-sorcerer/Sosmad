@@ -1,29 +1,10 @@
-.postContainer {
-    border-radius: var(--borderRadius);
-    margin: var(--edgeSpacing);
-    position: relative;
-    overflow: hidden;
-    margin-bottom: var(--marginBottom);
-
-}
-
-.backgroundImage {
-    overflow: hidden;
-    border-radius: var(--borderRadius);
-    text-align: center;
-    position: absolute;
-    top: 3px;
-    width: 95%;
-    height: 320px;
-    transform: translate(3px);
-}
-
 .main {
     background-color: var(--secondary);
     border-radius: var(--borderRadius);
     position: relative;
-    background-color: rgb(43, 45, 46, .8);
-    backdrop-filter: blur(25px);
+    background-color: rgb(43, 45, 46, );
+    margin: var(--edgeSpacing);
+    margin-bottom: var(--marginBottom);
 }
 
 .header {
@@ -72,19 +53,21 @@
     width: 100%;
     border-radius: var(--borderRadius);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .background {
     border-radius: var(--borderRadius);
     overflow: hidden;
     position: relative;
-    width: 99%;
-    height: 99%;
+    width: 95%;
+    height: 100%;
 }
 
 .mainImage {
-    border-radius: 10px;
-    overflow: hidden;
+
     position: relative;
     width: 100%;
     object-fit: cover;
@@ -92,11 +75,9 @@
 
 .metaData {
     position: absolute;
+    background-color: var(--secondary);
     bottom: 0;
-    z-index: 1;
     width: 100%;
     height: 30%;
-    background-image: linear-gradient(180deg, rgb(43, 45, 46, .5), rgb(31, 31, 31));
-    backdrop-filter: blur(15px);
-    box-shadow: 0px -10px 10px rgb(0, 0, 0, .1);
+    box-shadow: 0px 5px 20px black;
 }

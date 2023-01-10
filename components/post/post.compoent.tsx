@@ -9,15 +9,7 @@ interface PostProps {
 }
 
 const Post = ({ image }: PostProps) => {
-    return (<div className={style.postContainer}>
-        <div className={style.backgroundImage}>
-            <Image
-                className={style.backgrondImageMain}
-                fill
-                src={image!}
-                alt=''
-            />
-        </div>
+    return (
         <div className={style.main}>
 
             <div className={style.header}>
@@ -47,8 +39,6 @@ const Post = ({ image }: PostProps) => {
                 </div>
             </div>
         </div>
-    </div>
-
     )
 }
 
