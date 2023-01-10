@@ -38,9 +38,9 @@ export default function Home() {
           onClickHandle={selectorOnClick}
           stateValue={selectActive}
         />
-        <Post />
-        <Post />
-        <Post />
+        <Post image={sampleData[0].currentStories[0].storyImage} />
+        <Post image={sampleData[1].currentStories[0].storyImage} />
+        <Post image={sampleData[2].currentStories[0].storyImage} />
       </div>
     </>
   )

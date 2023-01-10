@@ -4,13 +4,17 @@ import IconButton from '../icon-button/icon-button.component';
 import MenuSvg from '../../public/svg/menu.svg'
 import { sampleData } from '../../utils/sampleData';
 
-const Post = () => {
+interface PostProps {
+    image?: string
+}
+
+const Post = ({ image }: PostProps) => {
     return (<div className={style.postContainer}>
         <div className={style.backgroundImage}>
             <Image
                 className={style.backgrondImageMain}
                 fill
-                src={sampleData[0].currentStories[0].storyImage}
+                src={image!}
                 alt=''
             />
         </div>
@@ -35,7 +39,7 @@ const Post = () => {
                     <Image
                         className={style.mainImage}
                         fill
-                        src={sampleData[0].currentStories[0].storyImage}
+                        src={image!}
                         alt=''
                     />
                 </div>
