@@ -4,6 +4,7 @@
     justify-content: space-around;
     position: relative;
     margin: var(--edgeSpacing);
+    margin-bottom: var(--marginBottom);
     border-radius: 50px;
 }
 

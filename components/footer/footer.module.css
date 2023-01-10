@@ -1,7 +1,7 @@
 .main {
     position: relative;
     background-color: var(--secondary);
-    height: 20vh;
+    height: 19vh;
     width: 100vw;
     position: fixed;
     bottom: 0%;
@@ -14,8 +14,8 @@
 
 .plusIcon {
     background-color: var(--accentColor);
-    height: 65px;
-    width: 65px;
+    height: 55px;
+    width: 55px;
     position: absolute;
     top: 0px;
     left: 50%;
@@ -27,5 +27,5 @@
     height: 50px;
     background-Color: var(--current);
     transform: translate(0%, -65%);
-    margin: 0px 40px
+    margin: 0px 60px
 }

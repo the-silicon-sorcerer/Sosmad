@@ -7,6 +7,7 @@ import Header from '../components/header/header.component'
 import BinarySelector from '../components/binary-select/binary.select.compoent'
 
 import { sampleData } from '../utils/sampleData'
+import Post from '../components/post/post.compoent'
 
 export default function Home() {
   const [selectActive, setSelect] = useState(false)
@@ -37,6 +38,9 @@ export default function Home() {
           onClickHandle={selectorOnClick}
           stateValue={selectActive}
         />
+        <Post />
+        <Post />
+        <Post />
       </div>
     </>
   )

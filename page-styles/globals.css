@@ -9,7 +9,7 @@
 :root {
   --edgeSpacing: 0px 20px;
   --primary: #aaaaaa;
-  --secondary: #2b2d2e;
+  --secondary: rgb(43, 45, 46);
   --active: #252828;
   --current: #363a3b;
   --accentColor: #3f8dfd;
