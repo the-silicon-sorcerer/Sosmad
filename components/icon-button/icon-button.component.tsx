@@ -9,7 +9,7 @@ interface IconButtonProps {
 
 const IconButton = ({ SvgIcon, classname, svgFill }: IconButtonProps) => {
     return (
-        <button className={`${styles.button} ${classname}`}>
+        <button className={`${classname}`}>
             <SvgIcon style={{ fill: svgFill }} />
         </button>
     )

@@ -1,5 +1,3 @@
-'use client'
-
 import IconButton from '../icon-button/icon-button.component';
 import styles from './footer.module.css'
 import PlusIcon from '../../public/svg/plus.svg'
