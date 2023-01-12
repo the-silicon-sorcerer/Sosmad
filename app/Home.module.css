@@ -1,7 +1,7 @@
-.main {
-  margin-top: 25px;
-}
-
 .main>* {
   margin-bottom: var(--marginBottom);
+}
+
+.main {
+  margin-top: 25px;
 }
