@@ -2,13 +2,13 @@ import Image from 'next/image';
 import style from './post.module.css'
 import IconButton from '../icon-button/icon-button.component';
 import MenuSvg from '../../public/svg/menu.svg'
-import { sampleData } from '../../utils/sampleData';
+import { sampleData, UserData } from '../../utils/sampleData';
 
 interface PostProps {
-    image?: string
+    user: UserData
 }
 
-const Post = ({ image }: PostProps) => {
+const Post = ({ user }: PostProps) => {
     return (
         <div className={style.main}>
 
@@ -17,11 +17,11 @@ const Post = ({ image }: PostProps) => {
                     <Image
                         className={style.image}
                         fill
-                        src={sampleData[0].profilePic}
+                        src={user.profilePic}
                         alt='' />
                 </div>
                 <div className={style.profileInfo}>
-                    <h2>Username</h2>
+                    <h2>{user.username}</h2>
                     <h3>Post-time</h3>
                 </div>
                 <IconButton classname={style.menu} SvgIcon={MenuSvg} />
@@ -31,11 +31,18 @@ const Post = ({ image }: PostProps) => {
                     <Image
                         className={style.mainImage}
                         fill
-                        src={image!}
+                        src={user.currentPosts[0].image}
                         alt=''
                     />
                 </div>
                 <div className={style.metaData}>
+                    <div className={style.engagement}>
+                        <p>{`${user.currentPosts[0].likes} Likes`}</p>
+                        <p>{`${user.currentPosts[0].comments} Comments`}</p>
+                    </div>
+                    <div className={style.description}>
+                        <p>{user.currentPosts[0].description}</p>
+                    </div>
                 </div>
             </div>
         </div>

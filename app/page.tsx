@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 
-import Header from "../../components/header/header.component";
-import StorySlider from "../../components/stories-slider/stories-slider.component";
-import BinarySelector from "../../components/binary-select/binary.select.compoent";
-import Post from "../../components/post/post.compoent";
+import Header from "../components/header/header.component";
+import StorySlider from "../components/stories-slider/stories-slider.component";
+import BinarySelector from "../components/binary-select/binary.select.compoent";
+import Post from "../components/post/post.compoent";
 
-import styles from '../../page-styles/Home.module.css'
-import { sampleData } from "../../utils/sampleData";
+import styles from '../page-styles/home.module.css'
+import { sampleData } from "../utils/sampleData";
 
 
 const HomePage = () => {
@@ -34,9 +34,9 @@ const HomePage = () => {
                     onClickHandle={selectorOnClick}
                     stateValue={selectActive}
                 />
-                <Post image={sampleData[2].currentStories[0].storyImage} />
-                <Post image={sampleData[0].currentStories[0].storyImage} />
-                <Post image={sampleData[1].currentStories[0].storyImage} />
+                {sampleData.map((user) => {
+                    return <Post user={user} />
+                })}
             </div>
         </>
     )
