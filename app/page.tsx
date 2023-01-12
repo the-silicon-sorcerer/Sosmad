@@ -7,7 +7,7 @@ import StorySlider from "../components/stories-slider/stories-slider.component";
 import BinarySelector from "../components/binary-select/binary.select.compoent";
 import Post from "../components/post/post.compoent";
 
-import styles from '../page-styles/home.module.css'
+import styles from './home.module.css'
 import { sampleData } from "../utils/sampleData";
 
 
