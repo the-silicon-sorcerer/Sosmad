@@ -1,5 +1,3 @@
-import './home.module.css'
-
 import React from "react"
 import Footer from "../components/footer/footer.compoent"
 import { Outfit } from '@next/font/google'
