@@ -1,4 +1,4 @@
-import '../page-styles/globals.css'
+import './home.module.css'
 
 import React from "react"
 import Footer from "../components/footer/footer.compoent"
